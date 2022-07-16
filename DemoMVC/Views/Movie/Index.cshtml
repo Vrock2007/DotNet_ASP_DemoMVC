@@ -1,0 +1,12 @@
+﻿@model DemoMVC.Models.Movie
+
+    <h2>Movie Info</h2>
+    <hr />
+    <div>
+        @*displaynamefor is helper class*@
+        
+           <p> @Html.DisplayNameFor(m => m.Id):@Html.DisplayFor(m => m.Id)</p>
+           <p> @Html.DisplayNameFor(m => m.Name):@Html.DisplayFor(m => m.Name)</p>
+           <p> @Html.DisplayNameFor(m => m.Year):@Html.DisplayFor(m => m.Year)</p>
+           <p> @Html.DisplayNameFor(m => m.Rating):@Html.DisplayFor(m => m.Rating)</p>
+    </div>

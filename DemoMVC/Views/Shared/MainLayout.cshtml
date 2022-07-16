@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1>Nums Digitals</h1>
+    <hr />
+    <a href="@Url.Action("Index", "Home")">Home</a>
+    <a href="@Url.Action("Index", "Movie")">Movie</a>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <hr />
+    <footer style="text-align:left; font-style:italic">
+        Contact:Lnt
+        Address:Mahape
+    </footer>
+</body>
+</html>

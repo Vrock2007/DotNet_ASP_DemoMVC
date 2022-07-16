@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DemoMVC.Models.Movie>
+    <h1>Movie Listing</h1>
+    <hr />
+    <table>
+        <thead>
+            <th>@Html.DisplayNameFor(m => m.Id)</th>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Year)</th>
+            <th>@Html.DisplayNameFor(m => m.Rating)</th>
+        </thead>
+        <tbody>
+            @foreach(var data in @Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(m => data.Id)</td>
+                <td>@Html.DisplayFor(m => data.Name)</td>
+                <td>@Html.DisplayFor(m => data.Year)</td>
+                <td>@Html.DisplayFor(m => data.Rating)</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <hr />
