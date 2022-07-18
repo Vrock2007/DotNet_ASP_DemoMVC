@@ -1,0 +1,25 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 40px;
+    background-color: mediumslateblue;
+    border: 5px solid lightcoral;
+}
+h1{
+    text-align: center;
+    background-color: burlywood;
+}
+table{
+    width: 80%;
+}
+tr:hover{
+    color: chartreuse;
+    background-color: blueviolet;
+}
+th {
+    font-weight: bolder;
+    background-color: darkviolet
+}
+tr {
+    background-color: rebeccapurple;
+}

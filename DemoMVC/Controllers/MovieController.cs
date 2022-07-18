@@ -38,6 +38,8 @@ namespace DemoMVC.Controllers
         public IActionResult List()
         {
             List<Movie> movies = GetMovies();
+            int count = movies.Count();
+            ViewBag.Count = count;
             return View(movies);
         }
 
@@ -51,6 +53,21 @@ namespace DemoMVC.Controllers
             List<Movie> movies = GetMovies();
             var data = movies.Where(m => m.Id == movieid).FirstOrDefault();
             return View("Index",data);
+        }
+
+        [HttpGet]
+        public IActionResult FindByYear()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FindByYear(int year)
+        {
+            List<Movie> movies = GetMovies();
+            var data = movies.Where(m => m.Year == year);
+            ViewBag.Movies = data;
+            return View();
         }
     }
 }
