@@ -37,3 +37,8 @@ nav {
         background-color: #CCA2E1;
         color: white;
     }
+
+a{
+    text-decoration: none;
+    box-sizing: border-box;
+}
