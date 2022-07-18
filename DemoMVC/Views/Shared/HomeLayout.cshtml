@@ -14,11 +14,14 @@
         @Html.ActionLink("About", "About", "Home")&nbsp;&nbsp;&nbsp;&nbsp;
         @Html.ActionLink("Contact", "Contact", "Home")&nbsp;&nbsp;&nbsp;&nbsp;*@
 
-    @Html.ActionLink("Home", "Index", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.ActionLink("All", "List", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.ActionLink("Find", "Find", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+    <nav>
+        @Html.ActionLink("Home", "Index", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("All", "List", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Find", "Find", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav>
 
-    <div style="background-color:cadetblue">
+
+    <div>
         @RenderBody()
     </div>
 </body>

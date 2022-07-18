@@ -12,8 +12,12 @@
 <body>
     <h1>Nums Digitals</h1>
     <hr />
-    <a href="@Url.Action("Index", "Home")">Home</a>
-    <a href="@Url.Action("Index", "Movie")">Movie</a>
+
+    <nav>
+        <a href="@Url.Action("Index", "Home")">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="@Url.Action("Index", "Movie")">Movie</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav>
+
 
     <div>
         @RenderBody()
@@ -21,8 +25,8 @@
 
     <hr />
     <footer style="text-align:left; font-style:italic">
-        Contact:Lnt
-        Address:Mahape
+        Contact:&nbsp;Lnt &nbsp;&nbsp;
+        Address:&nbsp;Mahape
     </footer>
 </body>
 </html>

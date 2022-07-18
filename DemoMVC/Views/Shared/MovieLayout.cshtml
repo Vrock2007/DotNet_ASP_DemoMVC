@@ -10,10 +10,14 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    @Html.ActionLink("Home", "Index", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.ActionLink("All", "List", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.ActionLink("Find", "Find", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.ActionLink("Yearly Movies", "FindByYear", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <nav>
+        @Html.ActionLink("Home", "Index", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("All", "List", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Find", "Find", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Yearly Movies", "FindByYear", "Movie")&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav>
+   
 
     <div style="background-color:lightcoral">
         @RenderBody()

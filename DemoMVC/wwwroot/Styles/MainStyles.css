@@ -2,24 +2,36 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     margin: 40px;
-    background-color: mediumslateblue;
-    border: 5px solid lightcoral;
+    background-color: #9999ff;
+    border: 5px solid #FFF0F8;
+    height: 600px;
 }
-h1{
+h1 {
     text-align: center;
-    background-color: burlywood;
+    color: #543E5C;
 }
 table{
-    width: 80%;
-}
-tr:hover{
-    color: chartreuse;
-    background-color: blueviolet;
+    width: 100%;
 }
 th {
+    color: antiquewhite;
     font-weight: bolder;
-    background-color: darkviolet
+    background-color: #543E5C;
 }
 tr {
-    background-color: rebeccapurple;
+    background-color: #CCA2E1;
 }
+tr:hover {
+    color: #543E5C;
+    background-color: chartreuse;
+}
+nav {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #543E5C;
+}
+    nav:hover {
+        background-color: #CCA2E1;
+        color: white;
+    }

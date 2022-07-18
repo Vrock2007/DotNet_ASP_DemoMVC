@@ -25,7 +25,7 @@ namespace DemoMVC.Controllers
         {
             List<Movie> movies = new List<Movie>()
             {
-                new Movie {Id = 1, Name = "Dr.MOM", Year = 2022, Rating = 4},
+                new Movie {Id = 1, Name = "Dr.Strange in MOM", Year = 2022, Rating = 4},
                 new Movie {Id = 2, Name = "NFS", Year = 2015, Rating = 4},
                 new Movie {Id = 3, Name = "Casino Royale", Year = 2006, Rating = 5},
                 new Movie {Id = 4, Name = "Quantum of Solace", Year = 2008, Rating = 4},
