@@ -3,8 +3,10 @@
 @using (Html.BeginForm())
 {
     <p>
-        Enter Year:
-        <input type="text" id="year" name="year" />
+        @*Enter Year:
+        <input type="text" id="year" name="year" />*@
+
+        Select Year : @Html.DropDownList("year")
         <br />
         <input type="submit" value="Find" />
     </p>

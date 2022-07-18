@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DemoMVC.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DemoMVC.Controllers
 {
@@ -58,6 +59,8 @@ namespace DemoMVC.Controllers
         [HttpGet]
         public IActionResult FindByYear()
         {
+            List<int> yearlist = new List<int>() { 2006, 2008, 2012, 2015, 2021, 2022 };
+            ViewBag.year = new SelectList(yearlist);
             return View();
         }
 
@@ -67,6 +70,8 @@ namespace DemoMVC.Controllers
             List<Movie> movies = GetMovies();
             var data = movies.Where(m => m.Year == year);
             ViewBag.Movies = data;
+            List<int> yearlist = new List<int>() { 2006, 2008, 2012, 2015, 2021, 2022 };
+            ViewBag.year = new SelectList(yearlist);
             return View();
         }
     }
