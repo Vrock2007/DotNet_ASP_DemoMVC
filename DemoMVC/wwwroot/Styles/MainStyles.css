@@ -19,11 +19,13 @@ th {
     background-color: #543E5C;
 }
 tr {
+    color: #543E5C;
     background-color: #CCA2E1;
+    font-weight: bold;
 }
 tr:hover {
-    color: #543E5C;
-    background-color: chartreuse;
+    font-weight: bold;
+    background-color: lightcoral;
 }
 nav {
     text-decoration: none;
